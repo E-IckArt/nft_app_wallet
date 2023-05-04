@@ -24,13 +24,13 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.deepPurple,
       ),
-      home: const MyHomePage(title: 'Argent Facile NFT'),
+      home: const MyWalletPage(title: 'Argent Facile NFT'),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+class MyWalletPage extends StatefulWidget {
+  const MyWalletPage({super.key, required this.title});
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
@@ -44,10 +44,10 @@ class MyHomePage extends StatefulWidget {
   final String title;
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<MyWalletPage> createState() => _MyWalletPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MyWalletPageState extends State<MyWalletPage> {
   int _counter = 0;
 
   void _incrementCounter() {
